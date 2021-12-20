@@ -4,14 +4,51 @@
     box-sizing: border-box;
 }
 
-.top_header{
+#site_header{
+    position: relative;
+}
+
+.bg_top{
     background-color: #009688;
     width: 100%;
     height: 20vh;
 }
 
-.bottom_header{
+.bg_bottom{
     background-color: #D9DBD4;
     width: 100%;
     height: 80vh;
+}
+
+.main_container{
+    position: absolute;
+    top: 30px;
+    width: 90%;
+    height: 93%;
+    left: 5%;
+    background-color: blue;
+}
+
+.avatar_top{
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    
+}
+
+
+
+
+/* LEFT SIDE */
+
+.header_left{
+    width: 33%;
+    height: 50px;
+    background-color: #EAEAEA;
+}
+
+.username{
+    display: flex;
+    align-items: center;
+
 }

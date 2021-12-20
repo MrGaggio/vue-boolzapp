@@ -52,6 +52,14 @@ p{
 }
 
 
+div.user_tab:hover{
+    background-color: #E9EBEB;
+}
+
+
+
+
+
 
 
 /* LEFT SIDE */
@@ -160,10 +168,34 @@ p{
 
 
 
+
+
+
+/* MIDDLE SIDE */
+
+.center{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main_left{
+    width: 50%;
+}
+
+.main_right{
+    width: 50%;
+}
+
+
+
+
+
+
+
 /* RIGHT SIDE */
 
 .right_side{
-
     width: 67%;
     height: 100%;
     background-color: #FAFAFA;

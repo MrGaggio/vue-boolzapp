@@ -140,7 +140,7 @@ p{
     width: 96%;
     height: 80px;
     background-color: white;
-    border: 1px solid #F6F6F6 ;
+    border: 2px solid #F6F6F6 ;
 }
 
 .left_user_tab{
@@ -163,9 +163,11 @@ p{
 /* RIGHT SIDE */
 
 .right_side{
+
     width: 67%;
     height: 100%;
     background-color: #FAFAFA;
+    background-image: url(../img/mine.jpg);
 }
 
 .header_right{
@@ -192,4 +194,15 @@ p{
     padding: 0 20px;
     letter-spacing: 15px;
     font-size: 18px;
+}
+
+.main_right{
+    height: calc(100% - 100px);
+}
+
+.footer_right{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #F3EEEA;
 }

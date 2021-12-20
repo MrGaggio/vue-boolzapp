@@ -8,6 +8,9 @@ a{
     color: #6EA7C0;
 }
 
+p{
+    color: #BABDBF;
+}
 
 #site_header{
     position: relative;
@@ -38,7 +41,12 @@ a{
     width: 40px;
     border-radius: 50%;
     margin: 5px;
-    
+}
+
+.avatar{
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 20px;
 }
 
 
@@ -77,6 +85,8 @@ a{
 .check_notifiche{
     height: 80px;
     background-color: #8EDAFC;
+    display: flex;
+    align-items: center;
 }
 
 .bell_wrap{
@@ -84,7 +94,6 @@ a{
     display: flex;
     align-items: center;
     float: left;
-    margin-top: 15px;
     background-color: white;
     width: 50px;
     height: 50px;
@@ -103,17 +112,13 @@ a{
     color: #8EDAFC;
 }
 
-.check{
-    padding-top: 20px;
-}
-
 .search_chat{
-    width: 97%;
+    width: 98%;
     height: 25px;
     margin: auto;
     background-color: white;
     border: 1px solid #F6F6F6 ;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 
 .search{
@@ -127,5 +132,30 @@ a{
     font-size: 12px;
 }
 
+
+.user_tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #F6F6F6 ;
+}
+
+.left_user_tab{
+    display: flex;
+}
+
+.right_user_tab{
+    display: flex;
+    align-self: start;
+    padding-top: 10px;
+    
+}
+
+.date{
+    font-size: small;
+}
 
 

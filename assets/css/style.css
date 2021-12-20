@@ -31,6 +31,7 @@ p{
 
 .main_container{
     position: absolute;
+    display: flex;
     top: 30px;
     width: 90%;
     height: 93%;
@@ -154,7 +155,38 @@ p{
 
 .date{
     font-size: small;
-    
 }
 
 
+
+
+/* RIGHT SIDE */
+
+.right_side{
+    width: 67%;
+    height: 100%;
+    background-color: #FAFAFA;
+}
+
+
+.header_{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #EAEAEA;
+}
+
+.username{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #B1B1B1;
+    padding: 0 20px;
+    letter-spacing: 15px;
+    font-size: 18px;
+}

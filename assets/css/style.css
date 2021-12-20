@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a{
+    color: #6EA7C0;
+}
+
 #site_header{
     position: relative;
 }
@@ -68,14 +72,17 @@
 }
 
 .check_notifiche{
-    display: flex;
-    align-items: center;
+
     height: 80px;
     background-color: #8EDAFC;
 }
 
 .bell_wrap{
     position: relative;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-top: 10px;
     background-color: white;
     width: 50px;
     height: 50px;

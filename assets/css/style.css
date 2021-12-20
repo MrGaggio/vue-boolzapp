@@ -41,8 +41,13 @@
 
 /* LEFT SIDE */
 
-.header_left{
+.left_side{
     width: 33%;
+}
+
+.header_left{
+    display: flex;
+    justify-content: space-between;
     height: 50px;
     background-color: #EAEAEA;
 }
@@ -50,5 +55,42 @@
 .username{
     display: flex;
     align-items: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #B1B1B1;
+    padding: 0 20px;
+    letter-spacing: 15px;
+    font-size: 18px;
+}
+
+.check_notifiche{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #8EDAFC;
+}
+
+.bell_wrap{
+    position: relative;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 12px;
 
 }
+
+.bell{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #8EDAFC;
+}
+

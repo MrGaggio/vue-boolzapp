@@ -10,6 +10,7 @@ a{
 
 p{
     color: #BABDBF;
+    font-size: 10px;
 }
 
 #site_header{
@@ -100,7 +101,6 @@ p{
     border-radius: 50%;
     margin-left: 20px;
     margin-right: 12px;
-
 }
 
 .bell{
@@ -132,7 +132,6 @@ p{
     font-size: 12px;
 }
 
-
 .user_tab{
     display: flex;
     align-items: center;
@@ -150,12 +149,12 @@ p{
 .right_user_tab{
     display: flex;
     align-self: start;
-    padding-top: 10px;
-    
+    padding-top: 10px;  
 }
 
 .date{
     font-size: small;
+    
 }
 
 

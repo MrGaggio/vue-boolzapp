@@ -8,6 +8,7 @@ a{
     color: #6EA7C0;
 }
 
+
 #site_header{
     position: relative;
 }
@@ -47,6 +48,8 @@ a{
 
 .left_side{
     width: 33%;
+    height: 100%;
+    background-color: #FAFAFA;
 }
 
 .header_left{
@@ -72,7 +75,6 @@ a{
 }
 
 .check_notifiche{
-
     height: 80px;
     background-color: #8EDAFC;
 }
@@ -82,7 +84,7 @@ a{
     display: flex;
     align-items: center;
     float: left;
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: white;
     width: 50px;
     height: 50px;
@@ -100,4 +102,30 @@ a{
     font-size: 20px;
     color: #8EDAFC;
 }
+
+.check{
+    padding-top: 20px;
+}
+
+.search_chat{
+    width: 97%;
+    height: 25px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #F6F6F6 ;
+    margin-top: 5px;
+}
+
+.search{
+    width: 70%;
+    border: none;
+}
+
+.search_icon{
+    padding: 0 30px;
+    color: #B1B1B1 ;
+    font-size: 12px;
+}
+
+
 

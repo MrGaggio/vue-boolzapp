@@ -168,8 +168,7 @@ p{
     background-color: #FAFAFA;
 }
 
-
-.header_{
+.header_right{
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -179,6 +178,10 @@ p{
 .username{
     display: flex;
     align-items: center;
+}
+
+.info_right{
+    padding-left: 10px;
 }
 
 .icons{

@@ -110,7 +110,14 @@ const app = new Vue(
           }
       },
       methods: {
-
+        mostra: function(){
+            
+        }
       }
     }
   );
+
+
+  //quando clicco sullo specifico avatar di sinistra mi vengono fuori i suoi messaggi ... li faccio diventare bottoni
+
+  

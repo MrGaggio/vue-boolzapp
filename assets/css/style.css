@@ -205,6 +205,25 @@ div.user_tab:hover{
     background-image: url(../img/mine.jpg);
 }
 
+.messages{
+    display: flex;
+
+}
+
+.message{
+    background-color: white;
+    width: 40px;
+    height: 25px;
+    margin: 10px 0;
+}
+
+.message.sent{
+    background-color: chartreuse;
+    width: 40px;
+    height: 25px;
+    align-self: flex-end;
+}
+
 .header_right{
     display: flex;
     justify-content: space-between;
@@ -244,7 +263,7 @@ div.user_tab:hover{
     background-color: #F3EEEA;
 }
 
-.message{
+.msg{
     width: 800px;
     height: 35px;
     padding-left: 20px;

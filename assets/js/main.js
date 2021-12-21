@@ -9,6 +9,8 @@ const app = new Vue(
     {
       el: "#app",
       data: {
+
+        message: "prova",
         contacts: [
           {
             name: "Michele",
@@ -95,6 +97,8 @@ const app = new Vue(
           },
         ],
       },
-      methods: {}
+      methods: {
+
+      }
     }
   );

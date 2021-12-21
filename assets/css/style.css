@@ -205,29 +205,27 @@ div.user_tab:hover{
     background-image: url(../img/mine.jpg);
 }
 
-.main_right{
+.messages{
     height: calc(100% - 100px);
     display: flex;
-    padding: 20px;
+    flex-direction: column;
+    padding: 20px 60px 20px 60px
 }
 
 .message{
     background-color: white;
-    width: 200px;
-    height: 35px;
-
+    width: 35%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
 }
 
-.message.send{
-    background-color: white;
-    width: 200px;
-    height: 35px;
-}
 
-.testo_spedito {
+
+.message.sent {
     background-color: chartreuse;
-    width: 40px;
-    height: 25px;
+    width: 35%;
+    padding: 10px;
     align-self: flex-end;
 }
 

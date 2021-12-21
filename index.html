@@ -16,7 +16,6 @@
 
 <body>
     <div id="app">
-        {{ message }}
 
         <div id="site_header">
             <div class="bg_top"></div>
@@ -65,7 +64,7 @@
                                 <img class="avatar" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="Michele">
                             </div>
                             <div class="user_info">
-                                <h3>Michele {{ message }}</h3>
+                                <h3>{{ contact.name }}</h3>
                                 <p> ok ...</p>
                             </div>
                         </div>

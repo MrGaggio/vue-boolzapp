@@ -68,6 +68,7 @@ div.user_tab:hover{
     width: 33%;
     min-width: 350px;
     height: 100%;
+    overflow-y: auto;
     background-color: #FAFAFA;
 }
 

@@ -66,6 +66,7 @@ div.user_tab:hover{
 
 .left_side{
     width: 33%;
+    min-width: 350px;
     height: 100%;
     background-color: #FAFAFA;
 }

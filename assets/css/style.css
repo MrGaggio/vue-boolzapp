@@ -200,6 +200,7 @@ div.user_tab:hover{
 .right_side{
     width: 67%;
     height: 100%;
+    overflow-y: auto;
     background-color: #FAFAFA;
     background-image: url(../img/mine.jpg);
 }

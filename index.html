@@ -186,15 +186,21 @@
                     </div>
 
                     <!-- ***** PARTE MESSAGGI ****** -->
-                    <div class="messages">
+                    <div  class="messages">
 
-                        <div v-for="(message, index) in contacts[0].messages" class="message sent">Lorem ipsum dolor.
+                        <div v-for="(message, index) in contacts[0].messages">
+                            <div class="message">{{message.text}}</div>
+
                         </div>
-                        <!-- <div class="message">prova123</div>
+                            
+
+                        <!-- <div  class="message sent">Lorem ipsum dolor.
+                        </div>
+                        <div class="message">prova123</div>
                         <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex vel
                             harum quidem tenetur impedit, iste suscipit enim dolore molestias alias qui sapiente nihil
                             ipsam accusantium quas, reprehenderit error! Aliquam.</div>
-                        <div class="message">precipitevolissimevolmente</div> -->
+                        <div class="message">precipitevolissimevolmente</div>  -->
                     </div>
 
 
@@ -214,8 +220,8 @@
             </div>
 
 
-            
-            <!-- /.main_container -->
+        
+        <!-- /.main_container -->
         </main>
     </div>
     <script src="./assets/js/main.js"></script>

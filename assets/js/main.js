@@ -16,6 +16,7 @@ const app = new Vue(
     {
       el: "#app",
       data: {
+        contattoAttivo: 0,
         contacts: [
           {
             name: "Michele",
@@ -113,7 +114,7 @@ const app = new Vue(
         mostra: function(){
             
         }
-      }
+      }  
     }
   );
 

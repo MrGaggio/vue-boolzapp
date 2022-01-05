@@ -222,10 +222,12 @@ div.user_tab:hover{
 
 
 
-.message.sent {
+.sent {
     background-color: chartreuse;
     width: 35%;
     padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
     align-self: flex-end;
 }
 

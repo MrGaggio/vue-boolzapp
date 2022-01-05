@@ -188,8 +188,14 @@
                     <!-- ***** PARTE MESSAGGI ****** -->
                     <div  class="messages">
 
-                        <div v-for="(message, index) in contacts[0].messages">
-                            <div class="message">{{message.text}}</div>
+                        <div 
+                        v-for="(message, index) in contacts[2].messages"
+                
+                        :class="message.status == 'received' ? 'message' : 'sent'">
+                            <div>
+                                {{message.text}}
+                            </div>
+
 
                         </div>
                             

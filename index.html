@@ -57,8 +57,9 @@
                     </div>
 
 
-                    <!-- CONTATTI -->
-                    <div v-on:click="mostra" class="user_tab" v-for="(contact, index) in contacts">
+                    <!-- *****  CONTATTI ***** -->
+
+                    <div class="user_tab" v-for="(contact, index) in contacts" @click="mostraContatto(index)">
                         <div class="left_user_tab">
                             <div class="avatar_wrap">
                                 <img class="avatar" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="Michele">
@@ -162,8 +163,6 @@
                         <p style="font-size: 10px;" class="date">20 12 2021 10:22:21</p>
                     </div>
                 </div> -->
-
-
                 </div>
 
                 <!-- PARTE DESTRA -->
@@ -189,7 +188,7 @@
                     <div  class="messages">
 
                         <div 
-                        v-for="(message, index) in contacts[2].messages"
+                        v-for="(message, index) in contacts[contattoAttivo].messages"
                 
                         :class="message.status == 'received' ? 'message' : 'sent'">
                             <div>

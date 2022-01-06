@@ -104,6 +104,7 @@ const app = new Vue({
       },
     ],
     contattoAttivo: 0,
+    message: ""
   },
   created(){
     // console.log(this.contacts[0].messages);
@@ -117,6 +118,10 @@ const app = new Vue({
      console.log(index);
      this.contattoAttivo = index
     console.log(this.contattoAttivo);
-    }
+    },
+    aggiungiMessaggio () {
+      // console.log("prova");
+      
+    },
   }
 })

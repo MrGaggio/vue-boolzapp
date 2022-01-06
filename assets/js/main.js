@@ -123,7 +123,7 @@ const app = new Vue({
       }
       // console.log(this.contacts);
       // alert('prova')
-      this.contacts[this.contattoAttivo].messages.push(newMessage)
+      this.contacts[this.contattoAttivo].messages.unshift(newMessage)
     },
   }
 })

@@ -121,9 +121,20 @@ const app = new Vue({
         text: this.message,
         status: 'sent',
       }
-      // console.log(this.contacts);
-      // alert('prova')
-      this.contacts[this.contattoAttivo].messages.unshift(newMessage)
+        // console.log(this.contacts);
+        // alert('prova')
+        this.contacts[this.contattoAttivo].messages.unshift(newMessage)
+        let replyMessage = {
+          date: '10/01/2020 15:30:55',
+          text: 'ok',
+          status: 'received'
+        }
+        
+        // con Arrow Function prende il this all'interno di Vue
+        setTimeout(() => {
+          this.contacts[this.contattoAttivo].messages.unshift(replyMessage)
+        }, 3000)
+        
     },
   }
 })

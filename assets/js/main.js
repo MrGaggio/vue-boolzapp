@@ -18,13 +18,11 @@ Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente r
 const app = new Vue({
   el: '#app',
   data: {
-    contacts: [
-      {
+    contacts: [{
         name: 'Michele',
         avatar: '_1',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '10/01/2020 15:30:55',
             text: 'Hai portato a spasso il cane?',
             status: 'sent'
@@ -45,8 +43,7 @@ const app = new Vue({
         name: 'Fabio',
         avatar: '_2',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '20/03/2020 16:30:00',
             text: 'Ciao come stai?',
             status: 'sent'
@@ -67,8 +64,7 @@ const app = new Vue({
         name: 'Samuele',
         avatar: '_3',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '28/03/2020 10:10:40',
             text: 'La Marianna va in campagna',
             status: 'received'
@@ -89,8 +85,7 @@ const app = new Vue({
         name: 'Luisa',
         avatar: '_4',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '10/01/2020 15:30:55',
             text: 'Lo sai che ha aperto una nuova pizzeria?',
             status: 'sent'
@@ -106,22 +101,27 @@ const app = new Vue({
     contattoAttivo: 0,
     message: ""
   },
-  created(){
+  created() {
     // console.log(this.contacts[0].messages);
     for (let i = 0; i < this.contacts[0].messages.length; i++) {
-        const element = this.contacts[0].messages[i]
+      const element = this.contacts[0].messages[i]
       // console.log(element);              
     }
   },
   methods: {
     mostraContatto: function (index) {
-     console.log(index);
-     this.contattoAttivo = index
-    console.log(this.contattoAttivo);
+      console.log(index);
+      this.contattoAttivo = index
+      console.log(this.contattoAttivo);
     },
-    aggiungiMessaggio () {
-      // console.log("prova");
-      
+    aggiungiMessaggio: function () {
+      console.log(this.message);
+      let newMessage = {
+        date: '10/01/2020 15:30:55',
+        text: 'Lo sai che ha aperto una nuova pizzeria?',
+        status: 'sent'
+      }
+
     },
   }
 })

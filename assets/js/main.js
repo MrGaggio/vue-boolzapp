@@ -142,9 +142,19 @@ const app = new Vue({
         }, 1000)  
     },
     cercaContatto: function () {
-        console.log('prova');
+        // console.log('prova');
         console.log(this.search);
+        this.contacts.forEach(contact => {
+          const prova1 = contact.name.includes(this.search)
+          console.log(prova1);
+          if (prova1) {
+            this.contact.visible = true
+          } else {
+            this.contact.visible = false
+          }
+        });
+
 
     },
   }
-})
+}) 

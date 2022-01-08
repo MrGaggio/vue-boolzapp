@@ -224,6 +224,10 @@ div.user_tab:hover{
     display: none;
 }
 
+.list{
+    list-style-type: none;
+
+}
 
 .sent {
     background-color: chartreuse;

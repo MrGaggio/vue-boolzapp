@@ -202,7 +202,6 @@
 
                         <div 
                         v-for="(message, index) in contacts[contattoAttivo].messages"
-                
                         :class="message.status == 'received' ? 'message' : 'sent'">
                             <div>
                                 {{message.text}}
@@ -210,8 +209,14 @@
                             <div class="date">
                                 {{message.date}}
                             </div>
+                        </div>
 
-
+                        <!-- *****  INFO MESSAGGI ***** -->
+                        <div class="info_msg">
+                            <ul class="list">
+                                <li><a href="#">Message info</a></li>
+                                <li><a href="#">Delete Message</a></li>
+                            </ul>
                         </div>
                             
 

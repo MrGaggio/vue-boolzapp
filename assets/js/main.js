@@ -145,12 +145,12 @@ const app = new Vue({
         // console.log('prova');
         console.log(this.search);
         this.contacts.forEach(contact => {
-          const prova1 = contact.name.includes(this.search)
-          console.log(prova1);
-          if (prova1) {
-            this.contact.visible = true
+          const mostraContatto = contact.name.includes(this.search)
+          // console.log(mostraContatto);
+          if (mostraContatto) {
+            contact.visible = true
           } else {
-            this.contact.visible = false
+            contact.visible = false
           }
         });
 

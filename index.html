@@ -56,13 +56,23 @@
 
                     <div class="search_chat">
                         <i class="fas fa-search search_icon"></i>
-                        <input v-model="search" @keyup="cercaContatto" class="search" type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input 
+                        v-model="search"
+
+                        @keyup="cercaContatto"
+                        class="search" 
+                        type="text" 
+                        placeholder="Cerca o inizia una nuova chat">
                     </div>
 
 
                     <!-- *****  CONTATTI ***** -->
 
-                    <div class="user_tab" v-for="(contact, index) in contacts" @click="mostraContatto(index)">
+                    <div class="user_tab"
+                    v-for="(contact, index) in contacts" @click="mostraContatto(index)"
+                    v-show="contact.visible"
+                    >
+                    
                         <div class="left_user_tab">
                             <div class="avatar_wrap">
                                 <img class="avatar" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="Michele">

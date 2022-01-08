@@ -199,10 +199,11 @@
 
                     <!-- ***** PARTE MESSAGGI ****** -->
                     <div  class="messages">
-
                         <div 
                         v-for="(message, index) in contacts[contattoAttivo].messages"
-                        :class="message.status == 'received' ? 'message' : 'sent'">
+                        :class="message.status == 'received' ? 'message' : 'sent'"
+                        @click="mostraMenu()"
+                        >
                             <div>
                                 {{message.text}}
                             </div>
@@ -212,21 +213,13 @@
                         </div>
 
                         <!-- *****  INFO MESSAGGI ***** -->
-                        <div class="info_msg">
+                        <div v-show="menuVisibility"  class="info_msg">
                             <ul class="list">
                                 <li><a href="#">Message info</a></li>
                                 <li><a href="#">Delete Message</a></li>
                             </ul>
                         </div>
-                            
 
-                        <!-- <div  class="message sent">Lorem ipsum dolor.
-                        </div>
-                        <div class="message">prova123</div>
-                        <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex vel
-                            harum quidem tenetur impedit, iste suscipit enim dolore molestias alias qui sapiente nihil
-                            ipsam accusantium quas, reprehenderit error! Aliquam.</div>
-                        <div class="message">precipitevolissimevolmente</div>  -->
                     </div>
 
 
@@ -235,10 +228,7 @@
                         <div class="smile_wrap icons">
                             <i class="far fa-smile"></i>
                         </div>
-
-                        <!-- Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio verde
-                        Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo. -->
-
+                            <!-- **** SCRIVI MESSAGGIO ***** -->
                         <div class="text_message">
                             <input @keyup.enter="nuovoMessaggio" v-model="message"  class="msg" type="text" placeholder="scrivi un messaggio">
                         </div>

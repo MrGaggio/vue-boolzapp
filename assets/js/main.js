@@ -108,7 +108,8 @@ const app = new Vue({
     contattoAttivo: 0,
     message: "",
     search: "",
-    menuVisibility: false
+    menuVisibility: false,
+    date: false,
   },
   created() {
     // console.log(this.contacts[0].messages);
@@ -160,7 +161,8 @@ const app = new Vue({
           }
         });
     },
-    mostraMenu: function (){
+    mostraMenu: function (index){
+      console.log(index);
       if (this.menuVisibility === false) {
         this.menuVisibility = true
       } else if (this.menuVisibility === true) {

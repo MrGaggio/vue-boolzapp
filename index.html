@@ -202,19 +202,22 @@
                         <div 
                         v-for="(message, index) in contacts[contattoAttivo].messages"
                         :class="message.status == 'received' ? 'message' : 'sent'"
-                        @click="mostraMenu()"
+                        @click="mostraMenu(index)"
                         >
                             <div>
                                 {{message.text}}
                             </div>
-                            <div class="date">
+                            <div v-show="date"
+                            >
                                 {{message.date}}
                             </div>
                         </div>
 
                         <!-- *****  INFO MESSAGGI ***** -->
                         <div v-show="menuVisibility"  class="info_msg">
-                            <ul class="list">
+                            <ul class="list"
+                            @click=""
+                            >
                                 <li><a href="#">Message info</a></li>
                                 <li><a href="#">Delete Message</a></li>
                             </ul>

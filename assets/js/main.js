@@ -145,7 +145,8 @@ const app = new Vue({
         // console.log('prova');
         console.log(this.search);
         this.contacts.forEach(contact => {
-          const mostraContatto = contact.name.includes(this.search)
+          // const mostraContatto = contact.name.includes(this.search)
+          const mostraContatto = contact.name.toLowerCase().includes(this.search.toLowerCase())
           // console.log(mostraContatto);
           if (mostraContatto) {
             contact.visible = true

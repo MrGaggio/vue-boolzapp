@@ -204,6 +204,19 @@
                         :class="message.status == 'received' ? 'message' : 'sent'"
                         @click="mostraMenu(index)"
                         >
+                            <!-- *****  INFO MESSAGGI ***** -->
+                            <div v-show="menuVisibility"  class="info_msg">
+                                <ul class="list"
+                                    >
+                                    <li><a href="#">Message info</a></li>
+                                    <li
+                                    @click="rimuovi(index)"
+                                    >
+                                    <a href="#">Delete Message</a
+                                    
+                                    ></li>
+                                </ul>
+                            </div>
                             <div>
                                 {{message.text}}
                             </div>
@@ -213,15 +226,7 @@
                             </div>
                         </div>
 
-                        <!-- *****  INFO MESSAGGI ***** -->
-                        <div v-show="menuVisibility"  class="info_msg">
-                            <ul class="list"
-                            @click=""
-                            >
-                                <li><a href="#">Message info</a></li>
-                                <li><a href="#">Delete Message</a></li>
-                            </ul>
-                        </div>
+
 
                     </div>
 

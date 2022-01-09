@@ -168,9 +168,11 @@ const app = new Vue({
       } else if (this.menuVisibility === true) {
         this.menuVisibility = false
       }
-
-
-
+    },
+    rimuovi: function (activeMessage){
+      console.log(activeMessage);
+      this.contacts.messages.splice(activeMessage, 1)
     }
+
   }
 }) 

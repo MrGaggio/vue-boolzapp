@@ -169,10 +169,11 @@ const app = new Vue({
         this.menuVisibility = false
       }
     },
-    rimuovi: function (activeMessage){
-      console.log(activeMessage);
-      this.contacts.messages.splice(activeMessage, 1)
-    }
+    // rimuoviMessaggio: function (activeMessage){
+    //   console.log(activeMessage);
+    //   console.log(messaggioAttivo);
+    //   this.contacts.messages.splice(activeMessage, 1)
+    // }
 
   }
 }) 
